@@ -1,7 +1,9 @@
 import { Router } from 'express';
-import userRoutes from './patientRoutes.js';
+import patientRoutes from './patientRoutes.js';
 
 const router = Router();
-router.use('/users', userRoutes);
+
+router.use('/patients', patientRoutes);
+
 export default router;
 
